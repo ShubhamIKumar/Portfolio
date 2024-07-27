@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Kumar's Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        .sidebar {
+            background-color: #2c3e50;
+            padding: 20px;
+        }
+
+        .sidebar .card {
+            border: none;
+            box-shadow: none;
+        }
+
+        .sidebar .card-title,
+        .sidebar .card p {
+            margin: 10px 0;
+        }
+
+        .sidebar .card a {
+            color: #1abc9c;
+            text-decoration: none;
+        }
+
+        .navigation-buttons {
+            margin-top: 20px;
+        }
+
+        .navigation-buttons .btn {
+            margin: 5px 0;
+        }
+
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .navigation-buttons .btn {
+            margin: 5px;
+            font-size: 12px;
+        }
+
+        .main-content {
+            padding: 40px;
+        }
+
+        h2 {
+            color: #1abc9c;
+            margin-bottom: 20px;
+        }
+
+        .list-group-item {
+            border: none;
+            border-left: 5px solid #1abc9c;
+            background-color: #34495e;
+        }
+
+        .card-title {
+            color: #1abc9c;
+            background-color: #34495e;
+        }
+
+        .card-body p {
+            margin-bottom: 10px;
+        }
+
+        .card-body {
+            border: none;
+            border-left: 5px solid #1abc9c;
+            background-color: #34495e;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 sidebar">
+                <div class="card bg-dark text-white">
+                    <div class="card-body">
+                        <h1 class="card-title">Shubham Kumar</h1>
+                        <p>Gurugram, Haryana</p>
+                        <p><a href="mailto:shubhamkumarhero@gmail.com" class="text-info">shubhamkumarhero@gmail.com</a>
+                        </p>
+                        <p>+91 6203-021-672</p>
+                        <p><a href="https://linkedin.com/in/shubham-kumar-837b80248/" target="_blank"
+                                class="text-info">LinkedIn</a></p>
+                        <p><a href="https://github.com/ShubhamIKumar" target="_blank" class="text-info">GitHub</a></p>
+                    </div>
+                </div>
+                <div class="navigation-buttons text-center">
+                    <button class="btn btn-outline-light btn-sm" onclick="scrollToSection('home')">Home</button>
+                    <button class="btn btn-outline-light btn-sm" onclick="scrollToSection('about')">About</button>
+                    <button class="btn btn-outline-light btn-sm" onclick="scrollToSection('skills')">Skills</button>
+                    <button class="btn btn-outline-light btn-sm" onclick="scrollToSection('projects')">Projects</button>
+                    <button class="btn btn-outline-light btn-sm"
+                        onclick="scrollToSection('education')">Education</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 main-content">
+                <section id="home">
+                    <h2>Welcome to My Portfolio</h2>
+                    <p>To obtain a challenging position in an organization to enhance my skills along with looking for
+                        growth of organization by applying my skills.</p>
+                </section>
+
+                <section id="about">
+                    <h2>About Me</h2>
+                    <p>Bachelor of Technology in Computer Science Engineering</p>
+                    <p>Institution: Maharishi Markandeshwar Deemed To Be University, Haryana (India)</p>
+                    <p>Graduation Year: April 2024</p>
+                </section>
+
+                <section id="skills">
+                    <h2>Technical Skills</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">Java</li>
+                        <li class="list-group-item">C++</li>
+                        <li class="list-group-item">Python (Basic)</li>
+                        <li class="list-group-item">SQL</li>
+                        <li class="list-group-item">HTML</li>
+                        <li class="list-group-item">CSS</li>
+                        <li class="list-group-item">JavaScript</li>
+                        <li class="list-group-item">ReactJS</li>
+                        <li class="list-group-item">NodeJS</li>
+                    </ul>
+                    <h2>Soft Skills</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">Project Management</li>
+                        <li class="list-group-item">Communication</li>
+                        <li class="list-group-item">Leadership</li>
+                        <li class="list-group-item">Time Management</li>
+                        <li class="list-group-item">Adaptability</li>
+                        <li class="list-group-item">Problem Solving</li>
+                        <li class="list-group-item">Teamwork</li>
+                    </ul>
+                </section>
+
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Application Review System</h3>
+                            <p class="card-text">Description: Developed a Django-based application that helps users to
+                                submit applications/complaints and view its status.</p>
+                            <p class="card-text">Technologies Used: Django, HTML, CSS, JavaScript</p>
+                            <p class="card-text">Outcome: Implemented an efficient way to manage the designation of
+                                users. Helpful for an organization to easily implement and use.</p>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Innovative Solutions</h3>
+                            <p class="card-text">Description: Developed a ReactJS application similar to social media
+                                applications. Users can write their issues and recommend solutions.</p>
+                            <p class="card-text">Technologies Used: ReactJS, NodeJS, SQL</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="education">
+                    <h2>Education</h2>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Bachelor of Technology (B. Tech.) - Computer Science</h3>
+                            <p class="card-text">Maharishi Markandeshwar Deemed To Be University, Haryana (India)</p>
+                            <p class="card-text">October 2020 - April 2024</p>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Intermediate (12th)</h3>
+                            <p class="card-text">A.N. College, Bihar (India)</p>
+                            <p class="card-text">September 2018 - April 2019</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+
+    </script>
+</body>
+
+</html>
